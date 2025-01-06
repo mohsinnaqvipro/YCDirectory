@@ -8,7 +8,15 @@ const nextConfig: NextConfig = {
         hostname: "*",
       },
     ],
+    dangerouslyAllowSVG: true
   },
+  experimental: {
+    ppr: 'incremental'
+  },
+  devIndicators: {
+    buildActivity: true,
+    buildActivityPosition: 'bottom-right'
+  }
 };
 
 export default nextConfig;
